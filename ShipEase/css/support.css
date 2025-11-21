@@ -1,0 +1,270 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header{
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #2f3b45;
+}
+
+.navbar-custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 45px;
+    color: white;
+}
+
+.logo-img{
+    width: 65px;
+    height: auto;
+}
+
+.nav-center{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;   /* 👈 Prevents text from breaking into 2 lines */
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: #A3B087;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #435663;
+    color: white;
+    font-weight: bold;
+    padding: 10px 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.dropbtn:hover {
+    background-color: #556778;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    min-width: 140px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f4f4f4;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header{
+    background: #A3B087;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 40px;
+    margin: 0;
+}
+
+.header p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.support-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 40px 10%;
+}
+
+.card{
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.faq{
+    padding: 40px 10%;
+}
+
+.faq h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2f3b45;
+}
+
+.faq-item{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.faq-item h3{
+    margin: 0 0 10px;
+}
+
+.contact-form{
+    padding: 50px 10%;
+}
+
+.contact-form h2{
+    color: #2f3b45;
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea{
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+textarea{
+    height: 140px;
+}
+
+button{
+    padding: 15px;
+    background: #2f3b45;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #40525e;
+}
+
+.footer-min {
+    background: #2f3b45;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.footer-min-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* two equal halves */
+    max-width: 1000px;
+    margin: auto;
+    gap: 20px;
+    align-items: center;
+    text-align: center; /* center content in each half */
+}
+
+.footer-left h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.footer-left p,
+.footer-right p {
+    color: #ccc;
+    font-size: 14px;
+    margin: 4px 0;
+}
+
+.footer-min-bottom {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #aaa;
+}
+
+@media (max-width: 600px){
+    .header h1{
+        font-size: 28px;
+    }
+    .header p{
+        font-size: 14px;
+    }
+    .support-cards{
+        padding: 20px 7%;
+    }
+    .faq, .contact-form{
+        padding: 30px 7%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 992px){
+    .header h1{
+        font-size: 34px;
+    }
+    .support-cards{
+        padding: 30px 10%;
+    }
+}
+
+@media (min-width: 992px){
+    .header h1{
+        font-size: 40px;
+    }
+}

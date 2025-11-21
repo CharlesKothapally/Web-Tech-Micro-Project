@@ -1,0 +1,155 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background-color: #2f3b45;
+}
+
+.navbar-custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 45px;
+    color: white;
+}
+
+.logo-img{
+    width: 65px;
+    height: auto;
+}
+
+.nav-center{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap;   /* 👈 Prevents text from breaking into 2 lines */
+    transition: 0.3s;
+}
+
+.nav-links li a:hover{
+    color: #A3B087;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-box {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    width: 380px;
+    text-align: center;
+}
+
+.login-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.login-box h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.subtitle {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+form input {
+    width: 100%;
+    padding: 8px 3px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+form input:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e65c00;
+}
+
+.switch {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.switch a {
+    color: #ff6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 480px) {
+    .login-box {
+        width: 90%;
+        padding: 25px 20px;
+    }
+
+    .login-box h2 {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track-Shipment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
+    <link rel="stylesheet" href="css/TS.css">
+    <link rel="icon" type="image/png" href="img/SE.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar-custom">
+    <div class="nav-left">
+        <a href="index.html"><img src="img/SE.png" alt="ShipEase Logo" class="logo-img"></a>
+    </div>
+
+    <div class="nav-center">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="shipping.html">Shipping</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+    </div>
+
+    <div class="nav-right dropdown">
+        <button class="dropbtn">Login/Signup &#9662;</button>
+        <div class="dropdown-content">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+
+    </nav>
+    </header>
+    <section class="track-hero">
+        <h1>Track Your Shipment</h1>
+    </section>
+
+    <main class="main">
+    <section class="tracking-box">
+      <h1>Track Your Shipment</h1>
+      <p>Enter your tracking number below to view live shipment status and delivery progress.</p>
+
+      <div class="tracking-input">
+        <input type="text" id="trackingNumber" placeholder="Enter Tracking Number" />
+        <button id="trackBtn">Track</button>
+      </div>
+
+      <div id="trackingResult" class="tracking-result hidden">
+        <div class="status-card">
+          <h2 id="shipmentId"></h2>
+          <p><strong>Status:</strong> <span id="statusText"></span></p>
+          <p><strong>Estimated Delivery:</strong> <span id="etaText"></span></p>
+
+          <div class="progress-bar">
+            <div id="progressFill" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <h3>Delivery Route</h3>
+          <div id="map" class="map-placeholder"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <section class="track-features">
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <img src="img/fd.webp" alt="Fast Delivery">
+                <h3>Fast Delivery</h3>
+                <p>Get real-time updates and speedy delivery for all packages.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="img/cs.webp" alt="24/7 Support">
+                <h3>24/7 Support</h3>
+                <p>Our team is always available to assist you with tracking queries.</p>
+            </div>
+
+            <div class="feature-card">
+                <img src="img/sp.jpg" alt="Secure Packages">
+                <h3>Secure Packages</h3>
+                <p>Ship with confidence — your packages are handled safely.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer-min">
+        <div class="footer-min-container">
+            <div class="footer-left">
+                <h3>ShipEase</h3>
+                <p>Your trusted partner for fast and reliable deliveries.</p>
+            </div>
+            <div class="footer-right">
+                <p>Email: support@shipease.com</p>
+                <p>Phone: +91 83XXXXX889</p>
+                <p>Address: Suryapet, Telangana, India</p>
+            </div>
+        </div>
+        <div class="footer-min-bottom">
+            <p>© 2025 ShipEase. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/TS.js"></script>
+
+</body>
+</html>
